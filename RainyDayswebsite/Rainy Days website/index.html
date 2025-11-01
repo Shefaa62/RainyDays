@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RainyDays - Premium outdoor clothing pushing the comfort zone. Shop our exclusive collection of weather-resistant jackets and gear.">
+    <title>RainyDays - Pushing the Comfort Zone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <nav class="desktop-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                </ul>
+            </nav>
+
+            <div class="logo-section">
+                <img src="Images/logo.png" alt="RainyDays - Pushing the Comfort Zone" class="logo">
+            </div>
+
+            <div class="header-icons">
+                <button class="icon-button desktop-search-icon" aria-label="Search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <button class="icon-button" aria-label="Shopping cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+                <button class="icon-button" aria-label="User account">
+                    <i class="fa-solid fa-user"></i>
+                </button>
+                <button class="icon-button menu-toggle" aria-label="Open menu" onclick="toggleMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <img src="Images/logo.png" alt="RainyDays" class="logo">
+            <div class="header-icons">
+                <button class="icon-button" aria-label="User account">
+                    <i class="fa-solid fa-user"></i>
+                </button>
+                <button class="icon-button" aria-label="Shopping cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+                <button class="icon-button close-button" aria-label="Close menu" onclick="toggleMenu()">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="search-bar">
+            <input type="search" placeholder="Search" aria-label="Search products">
+            <button class="search-button" aria-label="Submit search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+
+        <nav aria-label="Mobile navigation">
+            <ul class="mobile-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1>Built For Rain.<br>Ready For Adventure.</h1>
+                    <p class="hero-tagline">Pushing The Comfort Zone</p>
+                    <p class="hero-description">
+                        Durable, all-weather rain jackets for men and women who refuse to stay indoors. From hiking trails to snowy slopes — stay protected, stay unstoppable.
+                    </p>
+                    <a href="shop.html" class="hero-btn">Explore The Collection</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="jackets-section">
+            <div class="jackets-container">
+                <div class="jackets-header">
+                    <h2>Our Jackets Combine Dependable Durability With Everyday Comfort, Crafted To Handle Shifting Weather Without Weighing You Down.</h2>
+                    <p class="jackets-subtitle">Mid-range in price but premium in performance, Rainy Days gear is made for those who refuse to stay inside when the clouds roll in.</p>
+                </div>
+
+                <div class="jackets-grid">
+                    <div class="jacket-card">
+                        <img src="Images/women.webp" alt="Women's Jacket Collection">
+                        <div class="jacket-overlay">
+                            <h3>Stay Stylish In Every Storm</h3>
+                            <a href="shop.html" class="jacket-btn">Shop Women's Jackets</a>
+                        </div>
+                    </div>
+
+                    <div class="jacket-card jacket-card-dark">
+                        <img src="Images/man.webp" alt="Men's Jacket Collection">
+                        <div class="jacket-content-below">
+                            <h3>Built For Rugged Adventures</h3>
+                            <a href="shop.html" class="jacket-btn">Shop Men's Jackets</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Arrivals Section -->
+        <section class="new-arrivals-section">
+            <div class="new-arrivals-container">
+                <div class="new-arrivals-header">
+                    <h2>New Arrivals</h2>
+                    <a href="shop.html" class="view-all-btn desktop-view-all">View All Products</a>
+                </div>
+
+                <div class="products-grid">
+                    <!-- Product 1 -->
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <img src="Images/product4.webp" alt="Glacier Pro Rain Jacket" class="product-image">
+                            <div class="product-actions">
+                                <button class="action-btn favorite-btn" aria-label="Add to favorites">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <button class="action-btn cart-btn" aria-label="Add to cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Glacier Pro Rain Jacket</h3>
+                            <p class="product-price">$149</p>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <img src="Images/product3.webp" alt="TrailFlow" class="product-image">
+                            <div class="product-actions">
+                                <button class="action-btn favorite-btn" aria-label="Add to favorites">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <button class="action-btn cart-btn" aria-label="Add to cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">TrailFlow</h3>
+                            <p class="product-price">$149</p>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <img src="Images/product2.webp" alt="StormFlex Jacket" class="product-image">
+                            <div class="product-actions">
+                                <button class="action-btn favorite-btn" aria-label="Add to favorites">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <button class="action-btn cart-btn" aria-label="Add to cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">StormFlex Jacket</h3>
+                            <p class="product-price">$149</p>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <img src="Images/product1.webp" alt="Summit Pro Long" class="product-image">
+                            <div class="product-actions">
+                                <button class="action-btn favorite-btn" aria-label="Add to favorites">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <button class="action-btn cart-btn" aria-label="Add to cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Summit Pro Long</h3>
+                            <p class="product-price">$149</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile View All Button -->
+                <a href="shop.html" class="view-all-btn mobile-view-all">View All Products</a>
+            </div>
+        </section>
+
+        <!-- Promotional Section -->
+        <section class="promo-section">
+            <div class="promo-container">
+                <div class="promo-content">
+                    <h2>Save Up To 75%</h2>
+                    <p>Stay Dry For Less With Up To 75% Off Selected Jackets.</p>
+                    <a href="shop.html" class="promo-btn">Shop Now</a>
+                </div>
+                <div class="promo-image">
+                    <img src="Images/sec4.webp" alt="Couple wearing RainyDays jackets">
+                </div>
+            </div>
+        </section>
+
+        <!-- Marquee Section -->
+        <section class="marquee-section">
+            <div class="marquee">
+                <div class="marquee-content">
+                    <span>Free Shipping On All Orders Over $50</span>
+                    <span>Free Shipping On All Orders Over $50</span>
+                    <span>Free Shipping On All Orders Over $50</span>
+                    <span>Free Shipping On All Orders Over $50</span>
+                </div>
+            </div>
+        </section>
+
+    <!-- VIDEO SECTION -->
+<section class="video-section">
+  <div class="video-wrapper">
+    <img src="Images/Video.webp" alt="Video Background" class="video-bg">
+    <button class="video-play-btn" aria-label="Play Video">
+      <div class="play-icon"></div>
+    </button>
+  </div>
+</section>
+
+<!-- TESTIMONIALS SECTION -->
+<section class="testimonials-section">
+  <div class="testimonials-header">
+    <h2>What Adventurers Are Saying</h2>
+    <p>Real experiences from those who tested our jackets in the wild.</p>
+  </div>
+
+  <div class="testimonial-slider swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide testimonial-card">
+        <i class="fa-solid fa-quote-right quote-icon"></i>
+        <p class="testimonial-text">
+          Most jackets make me feel like I'm wrapped in a tent. This one actually looks good with jeans. Now I wear it even when it’s not raining.
+        </p>
+        <div class="testimonial-author">
+          <span class="stars">★★★★★</span><br>Sandra W
+        </div>
+      </div>
+
+      <div class="swiper-slide testimonial-card">
+        <i class="fa-solid fa-quote-right quote-icon"></i>
+        <p class="testimonial-text">
+          Bought the GlacierShield for a ski trip. Warm, waterproof, and weirdly stain-resistant. It’s now my go-to travel jacket.
+        </p>
+        <div class="testimonial-author">
+          <span class="stars">★★★★★</span><br>Daniel R
+        </div>
+      </div>
+
+      <div class="swiper-slide testimonial-card">
+        <i class="fa-solid fa-quote-right quote-icon"></i>
+        <p class="testimonial-text">
+          The StormFlex jacket kept me dry the whole weekend. Lightweight yet tough — absolutely love it.
+        </p>
+        <div class="testimonial-author">
+          <span class="stars">★★★★★</span><br>Jenny L
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+     <!-- WHY CHOOSE US SECTION -->
+<section class="why-choose-section">
+  <div class="why-container">
+    <h2 class="why-title">Why Choose Rainy Days For Your Outdoor Gear?</h2>
+
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-number">01</div>
+        <h3>Built To Last</h3>
+        <p>Our jackets are designed with durable, weather-tested materials that perform in rain, wind, and snow.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-number">02</div>
+        <h3>Comfort Without Compromise</h3>
+        <p>Lightweight, breathable, and flexible — so you stay protected without feeling restricted.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-number">03</div>
+        <h3>Trusted By Real Adventurers</h3>
+        <p>From hikers to daily commuters, our customers rely on Rainy Days for reliable protection in any forecast.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section footer-logo-section">
+                    <img src="Images/logo-white.png" alt="RainyDays" class="footer-logo">
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Subscribe to our Newsletter</h3>
+                    <p class="newsletter-text">Get exclusive early access to new arrivals, limited editions, and special releases — before anyone else.</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+                        <input type="email" class="newsletter-input" placeholder="Enter Email Address" required aria-label="Email address">
+                        <button type="submit" class="subscribe-button">Subscribe</button>
+                    </form>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="TikTok">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; Copyright 2025. All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+</body>
+</html>
